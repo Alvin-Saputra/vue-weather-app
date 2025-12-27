@@ -5,7 +5,7 @@ const props = defineProps({
         required: false,
     },
 
-    weatherCondition: {
+    weatherDescription: {
         type: String,
         required: false,
     },
@@ -20,7 +20,7 @@ const props = defineProps({
             <sup class="relative -top-20 -left-2 text-2xl font-light">°C</sup>
         </h1>
         <p class="text-4xl text-gray-200">
-            {{ weatherCondition }}
+            {{ weatherDescription }}
         </p>
     </div>
 </template>

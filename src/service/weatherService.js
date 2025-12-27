@@ -4,7 +4,7 @@ import axios from 'axios';
 const apiClient = axios.create({
   baseURL: 'https://api.openweathermap.org/data/2.5', // URL utama API
   params: {
-    appid: '601bcd235ff4e9883322abb767bffb67', // Ambil API Key dari .env
+    appid: import.meta.env.VITE_WEATHER_API_KEY, // Ambil API Key dari .env
     units: 'metric', // Supaya suhu dalam Celcius
   },
 });
